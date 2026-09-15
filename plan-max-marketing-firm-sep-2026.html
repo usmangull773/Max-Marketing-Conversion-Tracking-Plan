@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Conversion Tracking Plan for Max Marketing Firm</title>
+<style>
+  :root{
+    --ink:#14181d;
+    --muted:#5b6673;
+    --line:#e2e6ea;
+    --accent:#1a56c4;
+    --bg:#ffffff;
+    --panel:#f7f8fa;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:820px;margin:0 auto;padding:56px 24px 72px;}
+  header{border-bottom:2px solid var(--ink);padding-bottom:24px;margin-bottom:44px;}
+  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;}
+  h1{font-size:30px;line-height:1.25;margin:0 0 12px;font-weight:650;letter-spacing:-.01em;}
+  .meta{font-size:14px;color:var(--muted);margin:0;}
+  h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:52px 0 18px;font-weight:650;}
+  h3{font-size:17px;margin:0 0 6px;font-weight:600;}
+  p{margin:0 0 16px;}
+  .lead{font-size:17px;}
+  .note{background:var(--panel);border-left:3px solid var(--accent);padding:18px 22px;margin:0 0 24px;}
+  .note p:last-child{margin-bottom:0;}
+  .finding{border-top:1px solid var(--line);padding:22px 0;}
+  .finding:last-child{border-bottom:1px solid var(--line);}
+  .tag{display:inline-block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:3px 8px;margin-bottom:10px;}
+  .finding p{margin:0 0 10px;color:var(--muted);}
+  .finding p:last-child{margin-bottom:0;}
+  .finding strong{color:var(--ink);font-weight:600;}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;background:var(--panel);padding:2px 6px;border-radius:3px;color:var(--ink);}
+  ol.plan{list-style:none;counter-reset:step;padding:0;margin:0;}
+  ol.plan li{counter-increment:step;border-top:1px solid var(--line);padding:24px 0 24px 52px;position:relative;}
+  ol.plan li:last-child{border-bottom:1px solid var(--line);}
+  ol.plan li::before{
+    content:counter(step);
+    position:absolute;left:0;top:24px;
+    width:32px;height:32px;line-height:32px;text-align:center;
+    background:var(--accent);color:#fff;border-radius:50%;
+    font-size:14px;font-weight:600;
+  }
+  ol.plan p{margin:0;color:var(--muted);font-size:15px;}
+  .week{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:4px;}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:0 0 14px;}
+  .stat{background:#fff;padding:18px 16px;text-align:center;}
+  .stat .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
+  .stat .v{font-size:22px;font-weight:650;letter-spacing:-.02em;}
+  .stat.delta .v{color:var(--accent);}
+  .case{margin:0 0 34px;}
+  .case h3{margin-bottom:12px;}
+  .case .src{font-size:13px;color:var(--muted);margin:0;}
+  table.next{width:100%;border-collapse:collapse;}
+  table.next th,table.next td{text-align:left;padding:14px 12px;border-bottom:1px solid var(--line);font-size:15px;vertical-align:top;}
+  table.next th{width:34%;font-weight:600;color:var(--ink);}
+  table.next td{color:var(--muted);}
+  table.next tr:first-child th,table.next tr:first-child td{border-top:1px solid var(--line);}
+  footer{margin-top:60px;padding-top:24px;border-top:2px solid var(--ink);font-size:14px;color:var(--muted);}
+  footer a{color:var(--accent);text-decoration:none;}
+  footer strong{color:var(--ink);font-weight:600;display:block;font-size:15px;}
+  @media (max-width:560px){
+    .wrap{padding:36px 18px 56px;}
+    h1{font-size:24px;}
+    .stats{grid-template-columns:1fr;}
+    ol.plan li{padding-left:44px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Conversion Tracking Plan</p>
+  <h1>Max Marketing Firm: Google Ads, GA4 and GTM tracking review</h1>
+  <p class="meta">Prepared for Viktoriia Tarakanova and the Max Marketing Firm team. 16 September 2026. Prepared by Usman Gull.</p>
+</header>
+
+<h2>What we found</h2>
+
+<p class="lead">This review was run against the live maxmarketingfirm.com front end before any call. Everything below was observed in the browser, not assumed from the job description.</p>
+
+<div class="note">
+  <p><strong>The headline:</strong> GA4 is collecting cleanly, but there is no Google Ads conversion signal leaving the site at all. Every other issue on this page sits downstream of that one.</p>
+</div>
+
+<div class="finding">
+  <span class="tag">Finding 01</span>
+  <h3>No Google Ads conversion tag is firing on any page</h3>
+  <p>The container <code>GTM-WVGF8LFM</code> loads and resolves two tag IDs: <code>G-RD6HFY39XN</code> and <code>GT-WVCLCVGJ</code>. There is no <code>AW-</code> conversion ID anywhere in the loaded tag set, and the configured destinations list is empty.</p>
+  <p>Across a full page load of the home page and the contact page, the only measurement request sent is <code>google-analytics.com/g/collect</code>. Nothing is sent to <code>googleadservices.com/pagead/conversion</code> or to <code>googleads.g.doubleclick.net</code>.</p>
+  <p><strong>What this means:</strong> Google Ads is receiving no first party conversion from the website, and with no Conversion Linker in place the gclid is never written to a first party cookie. Any conversion that does get imported later will be missing its click attribution.</p>
+</div>
+
+<div class="finding">
+  <span class="tag">Finding 02</span>
+  <h3>The contact form cannot be caught by the built in Form Submission trigger</h3>
+  <p>The form on <code>/contact</code> is a Next.js Server Action. Its hidden fields are <code>$ACTION_REF_1</code>, <code>$ACTION_1:0</code> and <code>$ACTION_KEY</code>, which means the submission is handled in React and never performs a native browser form submit or a redirect to a thank you page.</p>
+  <p>The form also carries a Cloudflare Turnstile challenge field, <code>cf-turnstile-response</code>. Turnstile intercepts and defers the submit event, which breaks the timing that GTM's native trigger depends on.</p>
+  <p><strong>What this means:</strong> A standard Form Submission trigger here either never fires or fires before the lead is actually accepted, which is one of the two most common sources of a conversion count that does not match the CRM.</p>
+</div>
+
+<div class="finding">
+  <span class="tag">Finding 03</span>
+  <h3>The LeadConnector chat widget is inside a shadow DOM, so click triggers cannot reach it</h3>
+  <p>The site loads the GoHighLevel LeadConnector widget from <code>beta.leadconnectorhq.com/chat-widget/chat-widget.esm.js</code>, config ID <code>69a36cac95fbc5f3a9d86995</code>. It is a Stencil web component and it renders inside a closed shadow root.</p>
+  <p>The widget also pulls in <code>intl-tel-input</code> and <code>libphonenumber-js</code>, which confirms a phone number is being captured inside the widget itself.</p>
+  <p><strong>What this means:</strong> GTM Click and Element Visibility triggers do not pierce shadow DOM. Every lead and every phone number that comes through the widget is currently invisible to both GA4 and Google Ads. This is the single highest value fix on the list, because it is where the leads actually are.</p>
+</div>
+
+<div class="finding">
+  <span class="tag">Finding 04</span>
+  <h3>The dataLayer has no custom implementation</h3>
+  <p>Across both pages tested, the dataLayer contained only container level entries: <code>gtm.js</code>, <code>gtm.dom</code> and two anonymous consent frames. There is no <code>form_submit</code>, no <code>generate_lead</code>, no <code>page_view</code> push on route change.</p>
+  <p>The site is a Next.js application with client side routing, so navigating between pages does not create a new page load. Without a manual history based page view push, GA4 sees a single page per session and the path that led to a lead is lost.</p>
+</div>
+
+<div class="finding">
+  <span class="tag">Finding 05</span>
+  <h3>Click to call is unconfigured, and Consent Mode is not being signalled</h3>
+  <p>The contact page carries one <code>tel:</code> link with no click tracking attached to it, and there is no call conversion with a minimum duration threshold in place, so a two second misdial would count the same as a booked consultation.</p>
+  <p>The contact form collects two explicit consent fields, <code>consentNonMarketing</code> and <code>consentPromotional</code>, but no corresponding Consent Mode v2 state is pushed to the dataLayer. The permission is being collected and then not passed to Google.</p>
+</div>
+
+<div class="finding">
+  <span class="tag">Finding 06</span>
+  <h3>The duplicate conversion risk sits in the next step, not the current one</h3>
+  <p>The job post mentions duplicate conversions, and this is where they will appear. The moment a native Google Ads conversion action is added while the GA4 key event is also imported into Google Ads, the same form fill is counted twice.</p>
+  <p><strong>The rule I apply:</strong> one action, one source of truth. Native Google Ads tags for anything used for bidding, GA4 key events left for analysis and kept out of the Ads conversions column, and a deduplication ID on any event that can arrive by more than one path.</p>
+</div>
+
+<h2>The 30 day plan</h2>
+
+<ol class="plan">
+  <li>
+    <span class="week">Session one, live on the call</span>
+    <h3>Install the Google Ads tag and Conversion Linker, then prove they fire</h3>
+    <p>Add the <code>AW-</code> tag through the existing GTM container, set the Conversion Linker to fire on all pages, and confirm the gclid is landing in the first party cookie. We watch the network panel together so you can see the conversion request leave the browser. This is the step that turns on attribution for everything after it.</p>
+  </li>
+  <li>
+    <span class="week">Session one, live on the call</span>
+    <h3>Bridge the Next.js form into the dataLayer</h3>
+    <p>Push a <code>generate_lead</code> event from the Server Action success state rather than from the submit event, so the conversion fires only after the lead is genuinely accepted and Turnstile has cleared. Then a Custom Event trigger replaces the native Form Submission trigger, which is the part that is failing today.</p>
+  </li>
+  <li>
+    <span class="week">Session one, live on the call</span>
+    <h3>Instrument the LeadConnector widget through its own message events</h3>
+    <p>Because the widget sits in shadow DOM, we listen on the LeadConnector postMessage and widget lifecycle events instead of clicks, and push a named dataLayer event when a chat lead is submitted. I will write the listener with you on screen so your engineer can reuse the same pattern on client sites.</p>
+  </li>
+  <li>
+    <span class="week">Session one, live on the call</span>
+    <h3>Set up click to call and Google Ads call reporting with a duration floor</h3>
+    <p>Click tracking on every <code>tel:</code> link, calls from ads tracked through a Google forwarding number, and calls from the website tracked with number insertion. A minimum call length is set so only real conversations count, which stops short misdials inflating the conversion column.</p>
+  </li>
+  <li>
+    <span class="week">Session one, closing 30 minutes</span>
+    <h3>Deduplicate, connect and verify end to end</h3>
+    <p>Link GA4 to Google Ads, decide per action which single source counts it, apply transaction and event IDs where an event can arrive twice, then verify the whole set in GTM Preview, Tag Assistant and GA4 DebugView while you watch. We do not close the call until Google Ads shows the conversions arriving.</p>
+  </li>
+  <li>
+    <span class="week">Days 2 to 30, after the session</span>
+    <h3>Confirm the numbers reconcile, then package it as a repeatable process</h3>
+    <p>At 72 hours and again at 14 days we compare Google Ads conversions against GA4 and against what actually landed in GoHighLevel, and correct any gap. You get a written container map and a checklist you can run on client accounts without me.</p>
+  </li>
+</ol>
+
+<h2>Comparable results</h2>
+
+<div class="case">
+  <h3>Cosmetic surgery clinic, US account, tracking rebuild</h3>
+  <div class="stats">
+    <div class="stat"><div class="k">Confirmed bookings</div><div class="v">5 to 12</div></div>
+    <div class="stat"><div class="k">Cost per conversion</div><div class="v">$99.97 to $46.15</div></div>
+    <div class="stat delta"><div class="k">Change</div><div class="v">+140% bookings</div></div>
+  </div>
+  <p class="src">Same problem class as this one. Micro conversions were reclassified so bidding optimized toward confirmed bookings, offline conversion uploads were re-established, and call conversion tracking was configured with a minimum duration. Ad spend was level across both months.</p>
+</div>
+
+<div class="case">
+  <h3>London plastic surgery clinic, booking flow tracking</h3>
+  <div class="stats">
+    <div class="stat"><div class="k">Book Appointment conversions, July</div><div class="v">0.00</div></div>
+    <div class="stat"><div class="k">Book Appointment conversions, August</div><div class="v">18.00</div></div>
+    <div class="stat delta"><div class="k">Cost per conversion</div><div class="v">Down 69.7%</div></div>
+  </div>
+  <p class="src">The enquiries were already happening. They were simply not being counted. Launching booking flow tracking captured them, and cost per conversion fell from £256.84 to £77.87 on nearly flat spend. This is the closest match to finding 01 and finding 03 above.</p>
+</div>
+
+<div class="case">
+  <h3>UK air conditioning installer, broken conversion tag</h3>
+  <div class="stats">
+    <div class="stat"><div class="k">Cost per lead, lead ad group</div><div class="v">£11.20</div></div>
+    <div class="stat"><div class="k">Click through rate</div><div class="v">8.32%</div></div>
+    <div class="stat delta"><div class="k">Quote form share of leads</div><div class="v">95.5%</div></div>
+  </div>
+  <p class="src">A broken conversion tag was under reporting leads. Once the tag was fixed and the real lead source was visible, budget could be staged against a fixed cost per lead ceiling instead of guesswork.</p>
+</div>
+
+<h2>What happens next</h2>
+
+<table class="next">
+  <tr><th>The call</th><td>Zoom or Google Meet, 90 to 120 minutes, screen shared both ways. I work in the accounts while explaining each step, and you keep the recording.</td></tr>
+  <tr><th>Access needed beforehand</th><td>Google Ads at standard access, GTM at publish level on container GTM-WVGF8LFM, GA4 at editor, and developer availability for one dataLayer push in the Next.js app. Nothing else.</td></tr>
+  <tr><th>Done inside the session</th><td>Google Ads tag and Conversion Linker live, form and widget events pushing, click to call and call conversions configured, GA4 and Google Ads linked, and every action verified in GTM Preview, Tag Assistant and GA4 DebugView.</td></tr>
+  <tr><th>Sent within 24 hours</th><td>A container map showing every tag, trigger and variable, the deduplication logic written down, and a client onboarding checklist your team can run on other accounts.</td></tr>
+  <tr><th>If it goes well</th><td>The same audit and setup process applied to your client accounts, on a rolling basis.</td></tr>
+</table>
+
+<footer>
+  <strong>Usman Gull</strong>
+  Google Ads and SEO Specialist. Google Ads Search Certified, GA4 and GTM certified, Meta Blueprint certified. Top Rated Plus on Upwork with a 100% Job Success Score.<br>
+  <a href="https://usmangullpro.com">usmangullpro.com</a>
+</footer>
+
+</div>
+</body>
+</html>
